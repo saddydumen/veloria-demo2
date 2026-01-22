@@ -1,0 +1,48 @@
+# Jekyll Configuration for GitHub Pages
+title: Veloria
+description: Portfolio and Store Website
+baseurl: /veloria-demo2
+url: https://saddydumen.github.io
+
+# Theme
+theme: minima
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files from Jekyll processing
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+# Include files
+include:
+  - .htaccess
+  - .nojekyll
+
+# Collections
+collections_dir: collections
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Permalink structure
+permalink: /:title/
+
+# Pagination
+paginate: 10
+paginate_path: /page:num/
+
+# Future posts
+future: false
+
+# Show drafts
+show_drafts: false
